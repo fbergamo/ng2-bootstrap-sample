@@ -9,7 +9,16 @@
     </div>
     <button type="button" class="btn btn-primary" (click)="add('info')">Add timed info alert</button>
     <button type="button" class="btn btn-warning" (click)="add('warning')">Add timed warning alert</button>
-
-
+  </div>
+</div>
+<div class="row">
+  <div class="col col-md-12">
+    <h1>TypeAhead</h1>
+    <input [(ngModel)]="selected"
+           [typeahead]="list"
+           placeholder="Search for items in list (Item1,Item2,...)"
+           typeaheadOptionField="name"
+           class="form-control">
+    <h3 *ngIf="list.indexOf(selected)!=-1">"{{selected}}" selected!</h3>
   </div>
 </div>

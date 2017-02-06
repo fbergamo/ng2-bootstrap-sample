@@ -24,4 +24,10 @@ export class FirstPageComponent implements OnInit {
     });
   }
 
+  public selected:string;
+  public list:string[] = [
+    'Item1','Item2','Item3','Item4','Item6','Item7','Item8','Item9'
+  ];
+
+
 }
